@@ -6,7 +6,7 @@
 /*   By: lilian <lilian@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/29 11:56:40 by ljullien          #+#    #+#             */
-/*   Updated: 2025/06/29 18:03:47 by lilian           ###   ########.fr       */
+/*   Updated: 2025/06/29 18:33:10 by lilian           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,9 +49,9 @@ void	ft_putcharoneline(int i, int x)
 	}
 }
 
-void	ft_putcharonecol(int j, int y)
+void	ft_putcharonecol(int j, int y, int i)
 {
-	if (j == 0)
+	if (j == 0 && i > 1)
 	{
 		ft_putchar("/");
 	}
@@ -86,7 +86,9 @@ void	rush(int x, int y)
 		{
 			ft_put11(x, y);
 			break;
-		}		
+		}
+		else if (x < 2 && i < y + 1)
+			ft_putcharonecol(j, y);
 		i = -1;
 		while (++i < x + 1)
 		{
