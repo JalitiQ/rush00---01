@@ -6,7 +6,7 @@
 /*   By: lilian <lilian@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/29 11:56:40 by ljullien          #+#    #+#             */
-/*   Updated: 2025/06/29 18:33:10 by lilian           ###   ########.fr       */
+/*   Updated: 2025/06/29 18:34:11 by lilian           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,7 @@ void	rush(int x, int y)
 			break;
 		}
 		else if (x < 2 && i < y + 1)
-			ft_putcharonecol(j, y);
+			ft_putcharonecol(j, y, i);
 		i = -1;
 		while (++i < x + 1)
 		{
