@@ -6,7 +6,7 @@
 /*   By: lilian <lilian@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/29 11:56:40 by ljullien          #+#    #+#             */
-/*   Updated: 2025/06/29 17:43:54 by lilian           ###   ########.fr       */
+/*   Updated: 2025/06/29 17:58:37 by lilian           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,14 @@ void	ft_putcharonecol(int j, int y)
 		ft_putchar("*");
 	}
 	ft_putchar("\n");
+}
+
+void	ft_put11(int x, int y)
+{
+	if (x == 1 && y == 1)
+	{
+		ft_putchar("/");
+	}
 }
 
 void	rush(int x, int y)
